@@ -124,15 +124,15 @@ function Galeria() {
   const tab = tabs.find((t) => t.id === ativa)!;
   return (
     <div className="mt-10">
-      <div role="tablist" aria-label="Segmentos" className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
+      <div role="tablist" aria-label="Segmentos" className="flex flex-wrap gap-2">
         {tabs.map((t) => (
           <button
             key={t.id}
             role="tab"
             aria-selected={t.id === ativa}
             onClick={() => setAtiva(t.id)}
-            className={`min-h-11 shrink-0 rounded-lg border px-4 text-sm font-medium transition-colors duration-200 ${
-              t.id === ativa ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:border-primary"
+            className={`min-h-10 rounded-full border px-4 py-2 text-left text-[13px] font-semibold leading-tight transition-all duration-200 sm:text-sm ${
+              t.id === ativa ? "border-primary bg-primary text-primary-foreground shadow-md" : "border-border bg-card text-foreground hover:border-primary hover:text-primary"
             }`}
           >
             {t.label}
