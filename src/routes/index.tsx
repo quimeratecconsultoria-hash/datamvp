@@ -120,7 +120,7 @@ function Phone({ p }: { p: NonNullable<Tab["phone"]> }) {
 }
 
 function Galeria() {
-  const [ativa, setAtiva] = useState(tabs[0].id);
+  const [ativa, setAtiva] = useState("beleza");
   const tab = tabs.find((t) => t.id === ativa)!;
   return (
     <div className="mt-10">
@@ -173,7 +173,7 @@ function Index() {
       <section className="mx-auto grid max-w-6xl gap-10 px-5 pb-16 pt-10 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:pb-24 lg:pt-16">
         <div>
           <p className="eyebrow">Para pequenos comércios e negócios locais</p>
-          <h1 className="mt-4 text-[30px] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[44px]">
+          <h1 className="mt-4 text-[30px] font-bold leading-[1.18] sm:text-4xl lg:text-[44px]">
             Criamos uma página digital para o seu comércio atrair e atender clientes direto no WhatsApp.
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
@@ -202,7 +202,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="max-w-3xl">
             <p className="eyebrow">Simples, direto e sem complicação</p>
-            <h2 className="mt-4 text-[28px] font-bold leading-tight tracking-tight sm:text-4xl">
+            <h2 className="mt-4 text-[28px] font-bold leading-tight sm:text-4xl">
               Por que depender só do Instagram se você pode ter um canal direto de vendas?
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
@@ -234,7 +234,7 @@ function Index() {
         <div className="card-soft grid overflow-hidden p-0 lg:grid-cols-2">
           <div className="p-6 sm:p-10 lg:p-12">
             <p className="eyebrow">Vamos começar?</p>
-            <h2 className="mt-4 text-[28px] font-bold leading-tight tracking-tight sm:text-4xl">
+            <h2 className="mt-4 text-[28px] font-bold leading-tight sm:text-4xl">
               Tenha uma página profissional com preço justo para a realidade do seu comércio.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
