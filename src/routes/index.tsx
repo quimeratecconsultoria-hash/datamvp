@@ -206,7 +206,7 @@ function Index() {
               Por que depender só do Instagram se você pode ter um canal direto de vendas?
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-              Redes sociais entregam para poucos e o WhatsApp sozinho não transmite a confiança que um comércio profissional merece. Nós criamos uma página sob medida para o seu negócio — focada em celular, leve e desenhada para colocar o seu cliente direto no seu WhatsApp em um clique.
+              Redes sociais entregam para poucos e o WhatsApp sozinho não transmite a confiança que um comércio profissional merece. Nós criamos uma página sob medida para o seu Redes sociais entregam para poucos e o WhatsApp sozinho não transmite a confiança que um comércio profissional merece. Nós criamos uma página sob medida para o seu negócio focada em celular, leve e desenhada para colocar o seu cliente direto no seu WhatsApp em um clique. em celular, leve e desenhada para colocar o seu cliente direto no seu WhatsApp em um clique.
             </p>
           </div>
 
