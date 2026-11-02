@@ -92,6 +92,12 @@ const tabs: Tab[] = [
   },
 ];
 
+const gmn = [
+  { t: "Aparecer no mapa", p: "Endereço, horário e rota para o cliente chegar até a sua porta.", d: "M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" },
+  { t: "Link para a sua página", p: "O perfil leva o visitante direto para a página do seu comércio.", d: "M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" },
+  { t: "Contato pelo WhatsApp", p: "Quem encontra você na busca fala com o seu atendimento em um clique.", d: "M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.5A8.4 8.4 0 1 1 21 11.5z" },
+];
+
 const passos = [
   { n: "1", t: "Envio de dados", d: "Você nos manda as informações básicas do seu comércio, fotos e serviços." },
   { n: "2", t: "Criação ágil", d: "Nós estruturamos a página pronta para celular." },
@@ -227,6 +233,28 @@ function Index() {
             <p className="mt-3 text-sm text-muted-foreground">Suporte transparente em todas as etapas.</p>
           </div>
         </div>
+      </section>
+
+      {/* Seção Google Meu Negócio */}
+      <section className="mx-auto max-w-6xl px-5 pt-16 sm:px-8 lg:pt-24">
+        <div className="max-w-3xl">
+          <p className="eyebrow">Visibilidade local no Google</p>
+          <h2 className="mt-4 text-[28px] font-bold leading-tight sm:text-4xl">
+            Seu comércio encontrado por quem procura no Google e no Maps.
+          </h2>
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            Quando alguém da sua região pesquisa pelo seu tipo de serviço, o perfil no Google Meu Negócio é um dos primeiros resultados. Ligamos esse perfil à sua página para que o cliente veja seus serviços e chame você no WhatsApp.
+          </p>
+        </div>
+        <ul className="mt-10 grid gap-4 md:grid-cols-3">
+          {gmn.map((g) => (
+            <li key={g.t} className="card-soft p-6 sm:p-8">
+              <Icon d={g.d} />
+              <h3 className="mt-4 text-lg font-bold">{g.t}</h3>
+              <p className="mt-2 leading-relaxed text-muted-foreground">{g.p}</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Seção 3 */}
