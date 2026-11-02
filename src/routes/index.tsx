@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import salao from "@/assets/salao.webp.asset.json";
-import barbearia from "@/assets/barbearia.webp.asset.json";
-import bebidas from "@/assets/bebidas.webp.asset.json";
-import academia from "@/assets/academia.webp.asset.json";
+import salao from "@/assets/salao.webp";
+import barbearia from "@/assets/barbearia.webp";
+import bebidas from "@/assets/bebidas.webp";
+import academia from "@/assets/academia.webp";
 import petshop from "@/assets/petshop.jpg";
 import mecanica from "@/assets/mecanica.jpg";
 import odonto from "@/assets/odonto.jpg";
@@ -76,8 +76,8 @@ type Tab = {
 };
 
 const tabs: Tab[] = [
-  { id: "beleza", label: "Barbearias / Salões / Estética", legenda: "Facilite o agendamento de horários direto no seu WhatsApp.", img: barbearia.url, composed: true },
-  { id: "alimentos", label: "Padarias / Pizzarias / Mercados / Bebidas", legenda: "Exponha seus produtos e receba pedidos organizados.", img: bebidas.url, composed: true },
+  { id: "beleza", label: "Barbearias / Salões / Estética", legenda: "Facilite o agendamento de horários direto no seu WhatsApp.", img: barbearia, composed: true },
+  { id: "alimentos", label: "Padarias / Pizzarias / Mercados / Bebidas", legenda: "Exponha seus produtos e receba pedidos organizados.", img: bebidas, composed: true },
   {
     id: "pet", label: "Pet Shops / Veterinárias", legenda: "Valorize os cuidados do seu pet shop com uma página leve.", img: petshop,
     phone: { nome: "Pet shop do bairro", itens: [["Banho", "Porte pequeno"], ["Banho e tosa", "Todos os portes"], ["Consulta veterinária", "Com horário"]], botao: "Agendar no WhatsApp" },
@@ -199,7 +199,7 @@ function Index() {
           </div>
         </div>
         <div className="card-soft overflow-hidden p-0">
-          <img src={salao.url} alt="Salão de beleza com página de agendamento aberta no celular" width={1408} height={768} fetchPriority="high" className="aspect-[1408/768] h-auto w-full object-cover" />
+          <img src={salao} alt="Salão de beleza com página de agendamento aberta no celular" width={1408} height={768} fetchPriority="high" className="aspect-[1408/768] h-auto w-full object-cover" />
         </div>
       </section>
 
@@ -273,7 +273,7 @@ function Index() {
               <p className="mt-3 text-sm text-muted-foreground">Atendimento direto pelo WhatsApp (11) 97066-3433. Resposta rápida.</p>
             </div>
           </div>
-          <img src={academia.url} alt="Academia de bairro com página digital" width={1408} height={768} loading="lazy" className="h-full min-h-64 w-full object-cover" />
+          <img src={academia} alt="Academia de bairro com página digital" width={1408} height={768} loading="lazy" className="h-full min-h-64 w-full object-cover" />
         </div>
       </section>
 
