@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Criamos uma página digital para o seu comércio atrair e atender mais clientes. Orçamento sem compromisso.",
+          "Tenha uma página digital para atrair mais clientes. Orçamento sem compromisso.",
       },
       { property: "og:title", content: "DATAMVP | Página digital para o seu comércio" },
       {
@@ -180,7 +180,7 @@ function Index() {
         <div>
           <p className="eyebrow">Para pequenos comércios e negócios locais</p>
           <h1 className="mt-4 text-[30px] font-bold leading-[1.18] sm:text-4xl lg:text-[44px]">
-            Criamos uma página digital para o seu comércio atrair e atender mais clientes.
+            Tenha uma página digital para atrair mais clientes.
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             Uma estrutura simples, rápida e profissional para destacar seu negócio local e transformar visitantes da sua região em novos contatos.
